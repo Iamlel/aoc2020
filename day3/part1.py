@@ -1,10 +1,9 @@
 file = open("input.txt", "r")
-#CHARCOUNT = 31 - use this for softcode
 
-file.readline()
 countx = trees = 0
+charscount = len(file.readline()) - 1
 for line in file.readlines():
-	countx = (countx + 3) % 31 #CHARCOUNT
+	countx = (countx + 3) % charscount
 	if (line[countx] == '#'):
 		trees += 1
 print(trees)
