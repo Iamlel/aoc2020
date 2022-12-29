@@ -2,8 +2,9 @@
 import re
 
 valid = 0
-for line in open("input.txt", "r"):
-    password = re.split("[- :]+", line)
-    if (int(password[0]) <= password[3].count(password[2]) <= int(password[1])):
-        valid += 1
+with open("input.txt", "r") as fp:
+	for line in fp.readlines():
+        password = re.split("[- :]+", line)
+        if (int(password[0]) <= password[3].count(password[2]) <= int(password[1])):
+            valid += 1
 print(valid)
