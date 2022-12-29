@@ -7,3 +7,4 @@ for line in file.readlines():
 	if (line[countx] == '#'):
 		trees += 1
 print(trees)
+file.close()
