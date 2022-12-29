@@ -1,4 +1,5 @@
-numbers = [int(x) for x in open("input.txt", "r").readlines()]
+with open("input.txt", "r") as fp:
+	numbers = [int(x) for x in fp.readlines()]
 	
 for x in numbers:
 	for y in numbers:
