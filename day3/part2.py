@@ -12,3 +12,4 @@ for k, line in enumerate(file):
 				slopes[i] += 1
 
 print(numpy.product(slopes))
+file.close()
